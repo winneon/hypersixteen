@@ -6,7 +6,7 @@ A [base16](https://github.com/chriskempson/base16) loader for [HyperTerm](https:
 
 ## Installation
 
-If you have [hpm] installed, then installing is very simple:
+If you have [hpm](https://github.com/zeit/hpm) installed, then installing is very simple:
 
 ```shell
 $ hpm install hypersixteen
