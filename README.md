@@ -2,6 +2,8 @@
 
 A [base16](https://github.com/chriskempson/base16) loader for [HyperTerm](https://github.com/zeit/hyperterm).
 
+![](https://i.imgur.com/Txrapcf.gif)
+
 ## Installation
 
 If you have [hpm] installed, then installing is very simple:
