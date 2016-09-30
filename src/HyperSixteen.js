@@ -1,3 +1,5 @@
+'use strict'
+
 import * as base from 'base16'
 
 class HyperSixteen {

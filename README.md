@@ -16,13 +16,14 @@ If you do not, edit your `.hyperterm.js` configuration and add `hypersixteen` to
 
 ## Configuration
 
-hypersixteen defaults to base16's default scheme. To change the scheme, add a `base16.scheme` value into your `.hyperterm.js` configuration, like so:
+hypersixteen defaults to base16's default scheme. To change the scheme, add a `base16.scheme` value into your `.hyperterm.js` configuration. You can also change individual base16 values (00, 01, 02, etc.) in the same fashion.
 
 ```javascript
 module.exports = {
   ...
   base16: {
-    scheme: 'default'
+    scheme: 'default' // scheme name
+    base00: '#000000' // manually setting the base00 value to black
   }
   ...
 }
