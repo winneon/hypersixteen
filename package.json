@@ -1,6 +1,6 @@
 {
   "name": "hypersixteen",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A base16 loader for HyperTerm.",
   "license": "MIT",
   "main": "entry.js",
