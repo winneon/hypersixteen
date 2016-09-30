@@ -71,7 +71,7 @@ class HyperSixteen {
     let termCSS = `
       /* hyperlinks support */
       x-screen a {
-        color: ${misc.foregroundColor};
+        color: ${ansi.red};
       }
 
       ${config.termCSS || ''}
