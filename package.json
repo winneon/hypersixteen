@@ -1,0 +1,27 @@
+{
+  "name": "hypersixteen",
+  "version": "1.0.0",
+  "description": "A base16 loader for HyperTerm.",
+  "license": "MIT",
+  "main": "entry.js",
+  "author": "Jesse Bryan <jesse@winneon.moe> (https://winneon.moe/)",
+  "repository": "https://github.com/winneon/hypersixteen",
+  "keywords": [
+    "hyperterm",
+    "hyperterm-theme",
+    "colors",
+    "base16"
+  ],
+  "dependencies": {
+    "base16": "^1.0.0",
+    "source-map-support": "^0.4.3"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.16.0",
+    "babel-preset-es2015": "^6.16.0",
+    "standard": "^8.3.0"
+  },
+  "scripts": {
+    "build": "standard src/**/*.js && babel src -q -s -d lib"
+  }
+}
