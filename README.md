@@ -20,12 +20,14 @@ hypersixteen defaults to base16's default scheme. To change the scheme, add a `b
 
 ```javascript
 module.exports = {
-  ...
-  base16: {
-    scheme: 'default' // scheme name
-    base00: '#000000' // manually setting the base00 value to black
+  config: {
+	...
+    base16: {
+      scheme: 'default' // scheme name
+      base00: '#000000' // manually setting the base00 value to black
+    }
+    ...
   }
-  ...
 }
 ```
 

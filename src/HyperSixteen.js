@@ -43,7 +43,7 @@ class HyperSixteen {
     let CSS = `
       .tabs_list,
       .tab_tab:not(.tab_active) {
-          background-color: ${misc.darkBackgroundColor}
+          background-color: ${misc.darkBackgroundColor};
       }
 
       .tabs_list {
@@ -57,7 +57,7 @@ class HyperSixteen {
       .tabs_title,
       .tab_active {
           background-color: ${misc.backgroundColor};
-          color: ${misc.foregroundColor}
+          color: ${misc.foregroundColor};
       }
 
       .tab_active:before,
@@ -68,13 +68,23 @@ class HyperSixteen {
       ${config.css || ''}
     `
 
+    let termCSS = `
+      /* hyperlinks support */
+      x-screen a {
+        color: ${misc.foregroundColor};
+      }
+
+      ${config.termCSS || ''}
+    `
+
     return Object.assign({ }, config, {
       backgroundColor: misc.backgroundColor,
       foregroundColor: misc.foregroundColor,
       cursorColor: misc.cursorColor,
       borderColor: misc.borderColor,
       colors: ansi,
-      css: CSS
+      css: CSS,
+      termCSS
     })
   }
 
