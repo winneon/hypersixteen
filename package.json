@@ -1,12 +1,14 @@
 {
   "name": "hypersixteen",
-  "version": "1.0.2-2",
-  "description": "A base16 loader for HyperTerm.",
+  "version": "1.0.3",
+  "description": "A base16 loader for Hyper.",
   "license": "MIT",
   "main": "entry.js",
   "author": "Jesse Bryan <jesse@winneon.moe> (https://winneon.moe/)",
   "repository": "https://github.com/winneon/hypersixteen",
   "keywords": [
+    "hyper",
+    "hyper-theme",
     "hyperterm",
     "hyperterm-theme",
     "colors",

@@ -41,6 +41,7 @@ class HyperSixteen {
     misc.borderColor = misc.darkBackgroundColor
 
     let CSS = `
+      .tabs_nav,
       .tabs_list,
       .tab_tab:not(.tab_active) {
           background-color: ${misc.darkBackgroundColor};
