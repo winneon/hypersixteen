@@ -1,6 +1,6 @@
 # hypersixteen
 
-A [base16](https://github.com/chriskempson/base16) loader for [HyperTerm](https://github.com/zeit/hyperterm).
+A [base16](https://github.com/chriskempson/base16) loader for [Hyper](https://github.com/zeit/hyper).
 
 ![](https://i.imgur.com/OkeSb5G.gif)
 
@@ -12,7 +12,7 @@ If you have [hpm](https://github.com/zeit/hpm) installed, then installing is ver
 $ hpm install hypersixteen
 ```
 
-If you do not, edit your `.hyperterm.js` configuration and add `hypersixteen` to the `plugins` array.
+If you do not, edit your `.hyper.js` configuration and add `hypersixteen` to the `plugins` array.
 
 ## Configuration
 
