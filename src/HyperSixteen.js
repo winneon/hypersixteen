@@ -38,7 +38,7 @@ class HyperSixteen {
       cursorColor: ansi.white
     }
 
-    misc.borderColor = misc.darkBackgroundColor
+    misc.borderColor = config.borderColor || misc.darkBackgroundColor
 
     let CSS = `
       .tabs_nav,
@@ -54,7 +54,7 @@ class HyperSixteen {
       .tab_tab:not(.tab_active) {
           color: ${base16.base02};
       }
-      
+
       .tabs_title,
       .tab_active {
           background-color: ${misc.backgroundColor};
