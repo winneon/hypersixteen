@@ -31,20 +31,17 @@ class HyperSixteen {
       lightWhite: base16.base05
     }
 
-    let misc = {
-      backgroundColor: base16.base00,
-      darkBackgroundColor: this.shade(base16.base00, -0.4),
-      foregroundColor: ansi.white,
-      cursorColor: ansi.white
-    }
-
-    misc.borderColor = misc.darkBackgroundColor
+    let backgroundColor = config.backgroundColor || base16.base00
+    let darkBackgroundColor = this.shade(backgroundColor, -0.4)
+    let foregroundColor = config.foregroundColor || ansi.white
+    let cursorColor = config.cursorColor || ansi.white
+    let borderColor = config.borderColor || darkBackgroundColor
 
     let CSS = `
       .tabs_nav,
       .tabs_list,
       .tab_tab:not(.tab_active) {
-          background-color: ${misc.darkBackgroundColor};
+          background-color: ${darkBackgroundColor};
       }
 
       .tabs_list {
@@ -54,11 +51,11 @@ class HyperSixteen {
       .tab_tab:not(.tab_active) {
           color: ${base16.base02};
       }
-      
+
       .tabs_title,
       .tab_active {
-          background-color: ${misc.backgroundColor};
-          color: ${misc.foregroundColor};
+          background-color: ${backgroundColor};
+          color: ${foregroundColor};
       }
 
       .tab_active:before,
@@ -79,10 +76,10 @@ class HyperSixteen {
     `
 
     return Object.assign({ }, config, {
-      backgroundColor: misc.backgroundColor,
-      foregroundColor: misc.foregroundColor,
-      cursorColor: misc.cursorColor,
-      borderColor: misc.borderColor,
+      backgroundColor: backgroundColor,
+      foregroundColor: foregroundColor,
+      cursorColor: cursorColor,
+      borderColor: borderColor,
       colors: ansi,
       css: CSS,
       termCSS
