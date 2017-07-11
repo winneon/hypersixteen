@@ -1,6 +1,6 @@
 {
   "name": "hypersixteen",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A base16 loader for Hyper.",
   "license": "MIT",
   "main": "entry.js",
